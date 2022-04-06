@@ -1,0 +1,11 @@
+﻿monitorName: MyYamlMonitor
+routingId: foo://bar
+dimensionNSSVerification:
+- dimension: DeviceNameList
+  requiredState: InProduction, ProductionReady
+  delimiter: ','
+dimensionLSSVerification:
+- dimension: InterfaceNameList
+  requiredState: InProduction
+  delimiter: '_'
+- dimension: OtherList

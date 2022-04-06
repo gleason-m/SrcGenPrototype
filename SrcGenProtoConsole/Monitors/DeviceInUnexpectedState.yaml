@@ -1,0 +1,5 @@
+﻿monitorName: DeviceInUnexpectedState
+routingId: foo://bar/baz
+dimensionNSSVerification:
+- dimension: DeviceName
+  requiredState: InMaintenace

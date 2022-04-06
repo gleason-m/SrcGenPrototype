@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Monitors\*" CopyToOutputDirectory="PreserveNewest" />
+    <!--<AdditionalFiles Include="Monitors\YamlMonitor.yaml" CopyToOutputDirectory="PreserveNewest" />
+    <AdditionalFiles Include="Monitors\DeviceInUnexpectedState.yaml" CopyToOutputDirectory="PreserveNewest" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SrcGenProtoGenerator\SrcGenProtoGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\SrcGenProtoLib\SrcGenProtoLib.csproj" />
+  </ItemGroup>
+
+</Project>

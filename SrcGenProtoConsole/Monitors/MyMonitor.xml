@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Monitor name="MyMonitor">
+	<Speak>I can talk!</Speak>
+</Monitor>
